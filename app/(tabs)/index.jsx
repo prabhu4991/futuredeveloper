@@ -1,22 +1,28 @@
-import { ScrollView, Text, Image } from "react-native";
+import { ScrollView, Text, Image,  } from "react-native";
+import { FlatList,View } from "react-native-gesture-handler";
 export default function App() {
+    const Data = [
+
+        {
+            id: 0,
+            title: "1 item",
+        },
+
+    {
+            id: 1,
+            title: "2 item",
+        },
+        {
+            id:2,
+            title:" 3 item",
+        },
+        {
+            id:4,
+            title:"3 item",
+        }
+    ];
     return (
         <ScrollView>
-<view style={{
-    height:60,
-    width:450,
-    display:"flex",
-    flexDirection:"row",
-    backgroundColor:"grey",
-    borderRadius:50,
-}}>
-<Text
-style={{
-    textAlign:"center",
-}}
->BIKE  Colection </Text>
-</view>
-
             <Image
                 source={{
                     uri: "https://as1.ftcdn.net/v2/jpg/00/30/69/86/1000_F_30698643_nQ78zqEFCtCUA77bgNaFRpR34FcIuJIY.jpg",
